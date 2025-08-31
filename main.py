@@ -33,7 +33,7 @@ SYSTEM_PROMPT="""You are a friendly and expert coding assistant.
 
 
 
-@app.route('/chat', methods=['POST'])
+@app.route('/chat', methods=["GET", "POST"])
 def chat():
     try:
         data = request.json
