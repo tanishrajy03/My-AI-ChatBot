@@ -63,7 +63,8 @@ class ChatBot {
 
     async callYourAPI(message) {
         try {
-            const response = await fetch('http://localhost:5000/chat', {
+            // 🔗 Updated: Now points to your Render backend
+            const response = await fetch('https://my-ai-chatbot-n93k.onrender.com/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
